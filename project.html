@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Project</title>
+        <style>
+           @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+           /* The lesson this project is based on has: attribute, child, sibling selector and pseudo classes and elements*/
+          .top{
+            list-style-type:none;
+            margin-left: 30px;
+            display: flex;
+            font-size: 13px;
+          }
+            .late{
+             width: 80px;
+             border-radius: 100%;
+             padding: 10px 20px;
+             margin-left: 50px;
+            }
+          .lego{
+      color: indianred;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 0.1px;
+    font-family: 'Poppins',sans-serif;
+          }
+          .logo{
+    color: orangered;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-family: 'Poppins';
+   margin-left: 20px;
+    }
+          header ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header ul li{
+        list-style: none;
+        margin-left: 20px;
+    }
+    header ul li a{
+        text-decoration: none;
+        color: aliceblue;
+        padding: 6px 15px;
+    }
+    .nmg{
+      font-size: 20px;
+      font-family: 'Poppins';
+    }
+   .nmg,
+    header ul li a:not(.logo):hover
+    {
+    color: lavender;
+    background-color: coral;
+    border-radius: 50px;
+    font-weight: 500;
+    }
+   .ran+p::first-letter{
+ font-size: 25px;
+ color: coral;
+   }
+   .icon{
+             width: 25px;
+             border-radius: 100%;
+             padding: 2px 2px;
+             margin-left: 100px;
+   }
+  
+   .mainimag{
+    float: left;
+    height:200px;
+   }
+  .lobster{
+    list-style-type: none;
+    display: flex; 
+    text-decoration: none;
+     display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+  footer{
+    background-color: lightcoral;
+  }
+  header, footer{
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+ li:nth-child(4){
+  font-size:larger;
+ }
+ input[type=text]{
+  border: 2px solid red;
+ }
+        </style>
+</head>
+<body>
+  <header>
+      <!-- This is the first row -->
+    <ul>
+        <li class="top">youremail@email.com</li>
+        <li class="top">Open hours: Monday, Friday (8:00AM-9:00PM)</li>
+    </ul>
+    <!-- The hr is a break between rows -->
+    <hr>
+    <!-- The entire section is the second row -->
+    <section>
+    <!-- This is the main header -->
+
+<ul>
+  <li>
+    <a href="#" class="logo">Restaurant</a>
+  </li>
+
+  <li><a href="#" class="lego">
+      Home
+    </a></li>
+
+  <li><a href="#" class="lego">
+      About
+    </a></li>
+
+  <li><a href="#" class="lego">
+      Menu
+    </a></li>
+
+  <li><a href="#" class="lego">
+      Contact
+    </a></li>
+
+  <li><a href="#" class="nmg">
+      Book a seat
+    </a></li>
+</ul>
+<!-- This is the main header -->
+    </section>
+  <!-- This is the 3rd row -->
+<hr>
+<h1>
+    <p style="font-size: 40px; font-family: Georgia, 'Times New Roman', Times, serif;">Feliciano</p>
+    BEST RESTAURANT
+</h1>
+<!-- Restaurant foods -->
+<img class="late" src="bt.jpg">
+<img class="late" src="b2.jpeg">
+<img class="late" src="pot.jpeg">
+<img class="late" src="Vegs.jpeg">
+<ul>
+  <li>Grilled Beef with Potatoes</li>
+  <li>Meat, Potatoes, Rice, Tomatoes</li>
+</ul>
+<!-- Restaurant foods -->
+  </header>
+  <hr>
+  <main>
+    <!-- The div contains the main body -->
+    <div>
+      <div class="ran">
+    <img class="mainimag" src="chef.jpeg">
+    <img class="mainimag" src="chef2.jpeg">
+      </div>
+  <p>A restaurant is an establishment that prepares and serves food and drinks to customers. Meals are generally served
+    and
+    eaten on the premises, but many restaurants also offer take-out and food delivery services. Restaurants vary greatly
+    in
+    appearance and offerings, including a wide variety of cuisines and service models ranging from inexpensive fast-food
+    restaurants and cafeteria...</p>
+    <input type="text" style="width: 400px; height: 50px;" placeholder="comment:">
+    </div>
+    <!-- The div contains the main body -->
+  </main>
+  <br>
+  <br><br><br>
+  <footer>
+    <!-- This is the second row of footer -->
+   <img src="home_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="homeicon" class="icon" alt="homeicon">
+   
+   <img src="fcbk.jpeg" alt="facebook" class="icon">
+   
+   <img src="insta.jpeg" class="icon" alt="insta">
+   
+   <img src="yt.jpeg" class="icon" alt="ytube">
+   
+   <img src="twit.webp" alt="twit" class="icon">
+   <br><br>
+  <ul>
+    <!-- This is the first row of footer -->
+    <li class="lobster">Contact us</li>
+    <li class="lobster">Our services</li>
+    <li class="lobster">Privacy Policy</li>
+    <li class="lobster">Terms and conditions</li>
+  </ul>
+    <!-- This is the 3rd row of footer -->
+   <center>
+Copyright &copy; 2021 Inferno- All rights reserved
+<br>
+<br>
+   </center>
+  </footer>
+</body>
+</html>
